@@ -55,6 +55,7 @@ for(let i = 0; i< operator.length; i++){
             if(output ==="" && history !=""){
                 if(isNaN(history[history.length -1])){
                     history = history.substr(0,history.length-1);
+                    console.log(history);
 
             }
            
@@ -89,7 +90,7 @@ for(let i = 0; i< operator.length; i++){
          
         //get the number and print its id into screen
         let output = reverseNumber(getOutput());
-
+console.log(output);
         //check if it empty or not
         if(output != NaN){
             output+=this.id;
